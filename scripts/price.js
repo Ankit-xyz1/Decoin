@@ -55,7 +55,7 @@ async function get_value() {
     method: 'GET',
     redirect: 'follow'
   };
-  let response = await fetch("https://api.coincap.io/v2/assets?apiKey=aa927d611f6da201f0f5ea170a79298a33ba280994de88eb3ff864c3a3880d4c", requestOptions);
+  let response = await fetch("https://rest.coincap.io/v3/assets?apiKey=aa927d611f6da201f0f5ea170a79298a33ba280994de88eb3ff864c3a3880d4c", requestOptions);
   let data = await response.json();
   // console.log(data)
   return data;
